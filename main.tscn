@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqiklwoysvxbd"]
+
+[ext_resource type="Texture2D" uid="uid://di0dk1no877f3" path="res://assets/tileset_quarky.png" id="1_kxxvk"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gork"]
+texture = ExtResource("1_kxxvk")
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5mgce"]
+sources/0 = SubResource("TileSetAtlasSource_5gork")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_5mgce")
+format = 2
